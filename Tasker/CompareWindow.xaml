@@ -1,0 +1,11 @@
+﻿<Window x:Class="Tasker.CompareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Compare processes" Height="500" Width="1000"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <DockPanel>
+        <DataGrid ItemsSource="{Binding Path=processes}" Background="White" BorderBrush="Black"
+                  Foreground="#FF2B3B4B" IsReadOnly="True" />
+
+    </DockPanel>
+</Window>
